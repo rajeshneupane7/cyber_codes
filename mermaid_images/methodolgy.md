@@ -4,20 +4,23 @@ graph TD
     Start([Academic & Technical Inquiry])
     
     subgraph Phase1 [Phase I: Data Acquisition]
-        A[Literature Search: IEEE Xplore, Web of Science]
-        B[Technical Search: Vendor Manuals, Govt Advisories]
+        A[Literature Search: IEEE Xplore, Web of Science, google scholar]
+        B[Technical Search: Vendor Manuals]
         C{Keyword Integration}
         C1[Cybersecurity, Precision Ag, IoT]
         C2[Robotic Milking, Herd Management]
     end
 
     subgraph Phase2 [Phase II: Scoping & Selection]
-        D[Initial Collection: n=122]
+        D[Scientific literature : n=118
+         Technical manuals: n= 48
+          News articles: n=36  ]
+
         E{Inclusion Criteria}
         E1[Published < 7 Years]
         E2[Commercial US Dairy Focus]
         F[Exclusion: Crop-based / Hypothetical Tech]
-        G[Final Core Corpus: n=25]
+        G[Final Core Corpus: n=33]
     end
 
     subgraph Phase3 [Phase III: Threat Modeling & Synthesis]
