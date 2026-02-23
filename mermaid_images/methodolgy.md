@@ -4,7 +4,7 @@ graph TD
     Start([Academic & Technical Inquiry])
     
     subgraph Phase1 [Phase I: Data Acquisition]
-        A[Literature Search: IEEE Xplore, Web of Science, google scholar]
+        A[ News search: DuckDuckgo API]
         B[Technical Search: Vendor Manuals]
         C{Keyword Integration}
         C1[Cybersecurity, Precision Ag, IoT]
@@ -12,23 +12,24 @@ graph TD
     end
 
     subgraph Phase2 [Phase II: Scoping & Selection]
-        D[Scientific literature : n=118
+        D[
          Technical manuals: n= 48
-          News articles: n=36  ]
+          News articles: n=210  ]
 
         E{Inclusion Criteria}
         E1[Published < 7 Years]
         E2[Commercial US Dairy Focus]
         F[Exclusion: Crop-based / Hypothetical Tech]
-        G[Final Core Corpus: n=33]
+        G[Final Core Corpus: n=158]
     end
 
     subgraph Phase3 [Phase III: Threat Modeling & Synthesis]
         H[Structural Extraction to Feature Matrix]
-        I{Attack Surface Mapping}
-        I1[Physical: Hardware/Actuators]
-        I2[Digital: APIs/MQTT]
-        I3[Human: Shared Credentials]
+        I{Attack Surface Mapping
+        }
+        I1[Physical: Hardware/Actuators: n=89]
+        I2[Digital: APIs/MQTT: n=54]
+        I3[Human: Shared Credentials: n=5]
         
         J[Framework Selection: MITRE ATT&CK for ICS]
         K[Iterative Researcher Validation]
